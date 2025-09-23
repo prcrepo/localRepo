@@ -90,7 +90,6 @@ echo "hello $name"
 #calling Function
 ur_name
 
-comments
 
 
 ur_grade() {	
@@ -111,6 +110,62 @@ fi
 # calling function 
 
 ur_grade
+
+
+
+# Arguments
+
+
+echo "My file name: $0"
+echo "First argument: $1"
+echo "Second argument: $2"
+
+
+
+
+# working with files 
+
+  #!/bin/bash
+
+  read -p "Enter Your File name" file
+
+  if [ -f "$file" ]
+  then 
+	  echo "File exists"
+  else
+	  echo "file not exists"
+  fi
+comments
+
+
+
+
+# Case statement
+
+ read -p "Enter your choice(start, stop, restart)" action 
+  case $action in
+	  start) echo "starting services::" ;;
+	  stop)  echo "stoping services::" ;;
+	  restart) echo "restsrting services::" ;;
+		*) echo "Invalid choice" ;;
+	esac
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
